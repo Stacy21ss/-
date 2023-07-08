@@ -19,4 +19,5 @@ void PrintFib (int n)
 }
 Console.WriteLine("Введите число ");
 int number = Convert.ToInt32(Console.ReadLine());
-PrintFib (number);
+if (number < 2) System.Console.WriteLine("Неккоректный ввод");
+else PrintFib (number);
